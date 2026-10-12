@@ -1,0 +1,21 @@
+@use '../../styles/variables' as variables
+
+.stack
+    margin: 0
+    display: grid
+    grid-template-columns: 96px 1fr
+    gap: 6px 16px
+    font-size: 14.5px
+
+    dt
+        color: var(--text-color-faint)
+
+    dd
+        margin: 0
+
+    @media screen and (max-width: variables.$mobileMaxWidth)
+        grid-template-columns: 1fr
+        gap: 0
+
+        dd
+            margin-bottom: 10px

@@ -1,0 +1,178 @@
+{
+    "siteUrl": "https://shrey-port.vercel.app",
+    "resumeUrl": "/shrey-singh-resume.pdf",
+    "biography": {
+        "name": "Shrey Singh",
+        "title": "Full-Stack & AI Engineer",
+        "location": "Jaipur, India",
+        "timezone": "IST (UTC+5:30)",
+        "lead": "I build full-stack products end to end: Python services, Next.js front ends, and the AI and geospatial pipelines in between, mostly for problems that citizens and governments actually have.",
+        "now": [
+            "I'm a **Computer Science undergraduate at Manipal University Jaipur**, and most of what I know comes from shipping. Over the past year I've built a GIS platform for disaster relocation for **Smart India Hackathon**, a multi-agent legal assistant, a real-time vision system, and a civic grievance platform that won **India Innovates 2026**.",
+            "Lately I've been working on retrieval and agent systems: cited answers over legal rulebooks, multilingual voice input with Sarvam, and running LLMs locally. I care about the unglamorous parts, like provenance, tests and a clean PR history, as much as the interface."
+        ],
+        "footer": "Based in Jaipur · Open to internships and a good conversation."
+    },
+    "emailParts": ["50033yerhs", "moc.liamg"],
+    "contactLinks": [
+        {
+            "icon": "github",
+            "label": "GitHub",
+            "link": "https://github.com/MrPanda009"
+        },
+        {
+            "icon": "linkedin",
+            "label": "LinkedIn",
+            "link": "https://www.linkedin.com/in/shrey-singh-70898237b/"
+        }
+    ],
+    "projects": {
+        "featured": [
+            {
+                "title": "The Dead Zone",
+                "icon": "/images/icons/dead-zone.svg",
+                "link": "https://github.com/MrPanda009/the-dead-zone",
+                "wide": true,
+                "description": "Decision support for relocating communities out of disaster-prone districts, built for Smart India Hackathon. It maps multi-hazard risk onto Uber H3 cells, checks whether destination sites can carry the extra load on water, schools and health care, and plans household-to-site moves.",
+                "stack": "Python, FastAPI, PostGIS, Uber H3, Sentinel-1 SAR, Next.js, MapLibre GL, GSAP"
+            },
+            {
+                "title": "JanSamadhan",
+                "icon": "/images/icons/jansamadhan.png",
+                "link": "https://jansamadhan.perkkk.dev/",
+                "wide": true,
+                "description": "Civic grievance platform for Delhi with citizen, worker, authority and admin portals. Complaints are routed to the right one of nine departments and escalated on SLA timers; citizens can file by voice through Sarvam speech-to-text or a multilingual chatbot.",
+                "stack": "Next.js, TypeScript, FastAPI, Supabase, PostGIS, OpenCV, Sarvam AI, GSAP",
+                "parts": [
+                    {
+                        "label": "Live",
+                        "link": "https://jansamadhan.perkkk.dev/"
+                    },
+                    {
+                        "label": "Demo video",
+                        "link": "https://www.youtube.com/watch?v=4Mb1QKaJfK8"
+                    },
+                    {
+                        "label": "Source",
+                        "link": "https://github.com/MrPanda009/ps-crm"
+                    }
+                ]
+            },
+            {
+                "title": "NyayaAI",
+                "icon": "/images/icons/nyaya.png",
+                "link": "https://nyay-ai-liard.vercel.app",
+                "description": "Multi-agent legal guidance for Indian citizens. A LangGraph intake agent turns a free-form story into structured case details and asks follow-ups until the case is complete.",
+                "stack": "LangGraph, Groq, Pydantic, Sarvam OCR, Next.js, Three.js"
+            },
+            {
+                "title": "Batman-Vision",
+                "icon": "/images/icons/batman-vision.svg",
+                "link": "https://github.com/MrPanda009/batman-vision",
+                "description": "A webcam that remembers what it has seen. YOLOE with ByteTrack picks the sharpest crop of each object, de-duplicates by embedding, and makes everything searchable.",
+                "stack": "Python, YOLOE, FastAPI, SQLite FTS5, Next.js"
+            },
+            {
+                "title": "Sarthi",
+                "icon": "/images/icons/sarthi.svg",
+                "link": "https://bhumi-vikas-sahayak-beta.vercel.app",
+                "description": "Answers questions on the MP Bhumi Vikas Rules for municipal clerks in English, Hindi or Hinglish, with the rule number and page. Also on Apple Watch and WhatsApp.",
+                "stack": "Next.js, FastAPI, hybrid RAG, Sarvam AI, SwiftUI"
+            },
+            {
+                "title": "YouTube Playlist Search",
+                "icon": "/images/icons/yt-search.png",
+                "link": "https://addons.mozilla.org/en-US/firefox/addon/youtube-playlist-search-ext/",
+                "description": "Open-source browser extension that adds search and match-to-match navigation to YouTube playlists of any length. Live on Firefox Add-ons.",
+                "stack": "JavaScript, WebExtensions (MV3), GitHub Actions",
+                "parts": [
+                    {
+                        "label": "Firefox Add-ons",
+                        "link": "https://addons.mozilla.org/en-US/firefox/addon/youtube-playlist-search-ext/"
+                    },
+                    {
+                        "label": "Source",
+                        "link": "https://github.com/MrPanda009/yt-playlist-search"
+                    }
+                ]
+            }
+        ],
+        "more": [
+            {
+                "title": "LeafLine",
+                "icon": "/images/icons/leafline.svg",
+                "link": "https://leaf-line-ivory.vercel.app",
+                "description": "Map-based civic and sustainability reporting for Delhi, with a chat assistant"
+            },
+            {
+                "title": "Green-code detectors",
+                "link": "https://github.com/AWS-env/environmental-hacks",
+                "description": "Tree-sitter checks for wasteful code, WeMakeDevs × AWS hack"
+            },
+            {
+                "title": "Snapchat Automation Bot",
+                "link": "https://github.com/MrPanda009/Snap-Macro-V2",
+                "description": "Android UI Automator scripting, my first automation project"
+            }
+        ]
+    },
+    "awards": [
+        {
+            "title": "India Innovates 2026",
+            "org": "Municipal Corporation of Delhi",
+            "badge": "Winner",
+            "year": "2026",
+            "bullets": [
+                "Selected among the top finalists nationally out of 1.26 crore+ applicants in the world's largest civic-tech hackathon, organised by HN and MCD at Bharat Mandapam, New Delhi.",
+                "Presented to the Chief Minister of Delhi, the CEO of Unstop, and senior government officials."
+            ]
+        },
+        {
+            "title": "NSUT Innovate '26",
+            "org": "Netaji Subhas University of Technology",
+            "badge": "Winner",
+            "year": "2026",
+            "bullets": ["Won the innovation competition hosted by Netaji Subhas University of Technology, New Delhi."]
+        },
+        {
+            "title": "IDEA2IPR 2025",
+            "org": "National competition",
+            "badge": "Finalist",
+            "year": "2025",
+            "bullets": [
+                "Selected as a finalist in the national-level idea-to-intellectual-property-rights competition."
+            ]
+        }
+    ],
+    "education": {
+        "degree": "B.Tech, Computer Science and Engineering",
+        "school": "Manipal University Jaipur",
+        "period": "2025 — 2029"
+    },
+    "stack": [
+        {
+            "group": "Languages",
+            "items": "Python, TypeScript, JavaScript, C++, SQL, Kotlin"
+        },
+        {
+            "group": "Web",
+            "items": "React, Next.js, FastAPI, Tailwind CSS, GSAP, Three.js"
+        },
+        {
+            "group": "AI",
+            "items": "Multi-agent systems (LangGraph), RAG, LLM integration (Groq, OpenRouter, Sarvam), computer vision (YOLO, OpenCV), OCR"
+        },
+        {
+            "group": "Data & geo",
+            "items": "PostgreSQL, PostGIS, Supabase, SQLite FTS5, Uber H3, MapLibre GL"
+        },
+        {
+            "group": "Tooling",
+            "items": "Git, GitHub Actions, Docker, Android automation"
+        }
+    ],
+    "seo": {
+        "title": "Shrey Singh — Full-Stack & AI Engineer",
+        "description": "CS undergraduate at Manipal University Jaipur building full-stack AI and geospatial products: civic-tech platforms, multi-agent systems, and computer vision. Winner of India Innovates 2026."
+    }
+}

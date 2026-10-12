@@ -1,0 +1,38 @@
+:root {
+    --font-size: 15px;
+    --font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --line-height: 1.6;
+
+    --container-width: 640px;
+    --border-radius: 8px;
+
+    /* Dark palette (default). The inline script in _document always stamps
+       data-theme, and [data-theme='light'] below overrides these tokens. */
+    color-scheme: dark;
+    --body-background: #141311;
+    --surface-background: #1b1a17;
+    --text-color: #d9d6d0;
+    --text-color-strong: #f3f1ed;
+    --text-color-muted: #9d988f;
+    --text-color-faint: #75716a;
+    --border-color: #2a2824;
+
+    --highlight-color: #ffc107;
+    --badge-color: #ffd24d;
+    --badge-background: #3a2f10;
+}
+
+[data-theme='light'] {
+    color-scheme: light;
+    --body-background: #f8f8f6;
+    --surface-background: #ffffff;
+    --text-color: #1a1917;
+    --text-color-strong: #0d0c0b;
+    --text-color-muted: #67635c;
+    --text-color-faint: #8f8a82;
+    --border-color: #e6e4df;
+
+    --highlight-color: #8a5a00;
+    --badge-color: #7a4f00;
+    --badge-background: #fff1c7;
+}

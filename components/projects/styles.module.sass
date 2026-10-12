@@ -1,0 +1,148 @@
+@use '../../styles/variables' as variables
+
+.grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 12px
+
+    @media screen and (max-width: variables.$mobileMaxWidth)
+        grid-template-columns: 1fr
+
+.card
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 6px
+    padding: 16px
+    background: var(--surface-background)
+    border: 1px solid var(--border-color)
+    border-radius: 12px
+    transition: border-color 0.15s
+
+    &:hover
+        border-color: var(--text-color-faint)
+
+    p
+        margin: 0
+        font-size: 14px
+        color: var(--text-color-muted)
+
+.wide
+    grid-column: 1 / -1
+
+.cardHead
+    display: flex
+    align-items: center
+    gap: 10px
+
+    img,
+    svg
+        width: 20px
+        height: 20px
+        border-radius: 5px
+        flex: none
+        object-fit: contain
+        fill: var(--text-color-muted)
+
+    h3
+        margin: 0
+        flex: 1
+        font-size: 15px
+        font-weight: 500
+        color: var(--text-color-strong)
+
+        a
+            text-decoration: none
+
+            // Stretch the title link over the whole card
+            &::after
+                content: ''
+                position: absolute
+                inset: 0
+                border-radius: 12px
+
+.arrow
+    color: var(--text-color-faint)
+    font-size: 13px
+
+.meta
+    margin-top: 4px
+    font-size: 13px
+    color: var(--text-color-faint)
+
+.parts
+    position: relative
+    z-index: 1
+    margin-top: 6px
+    display: flex
+    flex-wrap: wrap
+    gap: 6px
+
+.pill
+    display: inline-flex
+    align-items: center
+    gap: 4px
+    padding: 2px 9px
+    font-size: 12.5px
+    color: var(--text-color)
+    text-decoration: none
+    border: 1px solid var(--border-color)
+    border-radius: 999px
+    transition: border-color 0.15s, color 0.15s
+
+    &:hover
+        border-color: var(--highlight-color)
+        color: var(--highlight-color)
+
+    span
+        color: var(--text-color-faint)
+
+.list
+    margin: 16px 0 0
+
+    li
+        border-bottom: 1px solid var(--border-color)
+
+    a
+        display: flex
+        align-items: center
+        gap: 12px
+        padding: 10px 2px
+        text-decoration: none
+
+        &:hover .name
+            text-decoration: underline
+            text-decoration-color: var(--text-color-faint)
+            text-underline-offset: 3px
+
+.listIcon
+    display: flex
+    flex: none
+
+    img,
+    svg
+        width: 18px
+        height: 18px
+        border-radius: 4px
+        object-fit: contain
+        fill: var(--text-color-muted)
+
+.name
+    color: var(--text-color-strong)
+    white-space: nowrap
+
+.desc
+    flex: 1
+    min-width: 0
+    color: var(--text-color-muted)
+    font-size: 14px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    @media screen and (max-width: variables.$mobileMaxWidth)
+        display: none
+
+.moreLink
+    margin: 24px 0 0
+    font-size: 14px

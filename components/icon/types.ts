@@ -1,0 +1,17 @@
+export const iconNames = {
+    telegram: 'telegram',
+    github: 'github',
+    linkedin: 'linkedin',
+    web: 'web',
+    social: 'social',
+    left: 'left',
+    right: 'right',
+    sun: 'sun',
+    moon: 'moon'
+} as const
+
+export type IconTypes = keyof typeof iconNames
+
+export interface IconProps {
+    name: IconTypes
+}

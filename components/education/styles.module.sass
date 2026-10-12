@@ -1,0 +1,32 @@
+@use '../../styles/variables' as variables
+
+.row
+    display: flex
+    align-items: baseline
+    gap: 12px
+    padding: 11px 0
+    border-top: 1px solid var(--border-color)
+    border-bottom: 1px solid var(--border-color)
+
+    @media screen and (max-width: variables.$mobileMaxWidth)
+        flex-wrap: wrap
+        gap: 2px 12px
+
+.main
+    flex: 1
+    min-width: 0
+
+    @media screen and (max-width: variables.$mobileMaxWidth)
+        flex-basis: 100%
+
+.school
+    color: var(--text-color-strong)
+
+.degree
+    color: var(--text-color-muted)
+
+.when
+    flex: none
+    font-size: 13px
+    color: var(--text-color-faint)
+    font-variant-numeric: tabular-nums

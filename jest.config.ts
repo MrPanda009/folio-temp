@@ -1,0 +1,26 @@
+import type { Config } from 'jest'
+
+const config: Config = {
+    preset: 'ts-jest',
+    testEnvironment: 'jsdom',
+    moduleNameMapper: {
+        '\\.(css|sass|scss)$': 'identity-obj-proxy',
+        '\\.(jpg|jpeg|png|webp|avif|gif|svg)$': 'identity-obj-proxy',
+        '^@/(.*)$': '<rootDir>/$1'
+    },
+    transform: {
+        '^.+\\.tsx?$': [
+            'ts-jest',
+            {
+                babel: true,
+                tsconfig: 'tsconfig.jest.json'
+            }
+        ]
+    },
+    setupFilesAfterEnv: ['<rootDir>/tests/jest.setup.tsx'],
+    collectCoverageFrom: ['components/**/*.{ts,tsx}', '!components/**/*.d.ts', '!components/**/*.test.{ts,tsx}', '!components/**/index.ts', '!components/**/types.ts', '!components/**/constants.ts'],
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+    transformIgnorePatterns: ['/.next/']
+}
+
+export default config

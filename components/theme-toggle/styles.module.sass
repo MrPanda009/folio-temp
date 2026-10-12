@@ -1,0 +1,23 @@
+.themeToggle
+    position: fixed
+    right: 16px
+    top: 16px
+    z-index: 4
+    width: 34px
+    height: 34px
+    display: grid
+    place-items: center
+    color: var(--text-color-muted)
+    background: var(--surface-background)
+    border: 1px solid var(--border-color)
+    border-radius: 50%
+    cursor: pointer
+    transition: color 0.15s
+
+    &:hover
+        color: var(--text-color-strong)
+
+    svg
+        width: 16px
+        height: 16px
+        fill: currentColor
